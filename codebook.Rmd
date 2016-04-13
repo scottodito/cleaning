@@ -1,0 +1,35 @@
+---
+title: "Assignment Week 4"
+author: "scottodito"
+date: "April 11, 2016"
+---
+
+
+##Codebook
+
+This is a codebook written in R Markdown.
+
+It describes the tidy dataset that has been created from the larger dataset found here. <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>.
+
+
+```{r echo=FALSE}
+
+library(knitr)
+
+kable(readLines("data/features_info.txt"), format = "rst")
+
+```
+
+
+#Tidy data set 'tidy_data.txt' info
+
+```{r echo=FALSE}
+
+summary_output <- read.table("tidy_data.txt")
+
+str(summary_output)
+
+```
+
+  
+  
