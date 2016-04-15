@@ -114,7 +114,7 @@ run_analysis <- function(){
   summary_output <- summarize_each(data_by, funs(mean))
   
   #export data
-  write.table(summary_output, "tidy_data.txt")
+  write.table(summary_output, "tidy_data.txt", row.names = FALSE)
   
 }
 
