@@ -4,7 +4,6 @@ author: "scottodito"
 date: "April 11, 2016"
 ---
 
-
 ##Codebook
 
 This is a codebook written in R Markdown.
@@ -21,7 +20,16 @@ kable(readLines("data/features_info.txt"), format = "rst")
 ```
 
 
-#Tidy data set 'tidy_data.txt' info
+#Tidy data set 'tidy_data.txt' info (variable names have been normalized)
+
+###Name cleaning replace rules
+
++ CamelCase => underscore
++ ()        => _fn
++ (         => _
++ )         => _
++ \-        => _
++ std       => standard_deviation
 
 ```{r echo=FALSE}
 
